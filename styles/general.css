@@ -1,0 +1,14 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Font stack prioritizing clean sans-serif and excellent Chinese rendering */
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8fafc; /* Soft, non-distracting background */
+    color: #334155;
+    line-height: 1.6;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <style>
+        .hidden {
+            display: none !important;
+        }
+        html{
+            display: block;
+            height: min-content;
+        }
+        body {
+            display: block;
+            background-color: #ffffff;
+            height: auto;
+            min-height: 230vh;
+        }
+        .exam-container {
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            padding-top: 15px;
+        }
+        .hsk-questions-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            width: 60vw;
+        }
+        .article-container {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            padding-bottom: 20vh;
+        }
+        .question-img {
+            display: block;
+            transform: translateY(25%) scale(1.5);
+            height: auto;
+        }
+        #timer {
+            display: block;
+            font-size: 20px;
+            text-align: end;
+        }
+        #word-counter {
+            font-size: 20px;
+        }
+        .writing-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            width: 100%;
+        }
+        #writing-area {
+            display: block;
+            min-height: 720px;
+            width: 100%;
+            font-family: "SimSun", "NSimSun", monospace;
+            font-size: 27px !important; /* 12px is the magic number for SimSun bitmaps */
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-brand">
+            <span class="brand-text">HSK<span class="brand-highlight">6</span> Mockup</span>
+        </a>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class = "exam-container">
+        <div class = "hsk-questions-container">
+            
+            <span id = "timer">00:00:00</span>
+
+            <div class = "article-container">
+                <img class = "question-img" src="./writing.png" alt="Text not found">
+            </div>
+
+            <div class = "writing-container hidden">
+                <span id = "word-counter">0</span>
+                <textarea id = "writing-area"></textarea>
+            </div>
+
+        </div>
+    </div>
+</main>
+    
+    <script src = "writing.js"></script>
+</body>
+</html>

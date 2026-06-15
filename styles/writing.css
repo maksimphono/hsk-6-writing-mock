@@ -46,7 +46,7 @@ body {
 }
 #writing-area {
     display: block;
-    min-height: 720px;
+    min-height: 900px;
     width: 100%;
     font-family: "SimSun", "NSimSun", monospace;
     font-size: 27px !important; /* 12px is the magic number for SimSun bitmaps */

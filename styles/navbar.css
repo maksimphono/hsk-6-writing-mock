@@ -1,6 +1,6 @@
 /* Navbar Container */
 .navbar {
-    background-color: #ffffff;
+    background-color: rgb(87, 189, 87);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     position: fixed; /* Keeps the navbar at the top during long reading sections */
     top: 0;
@@ -33,7 +33,7 @@
 }
 
 .brand-highlight {
-    color: #0284c7; /* A focused, professional blue */
+    color: #0398e3; /* A focused, professional blue */
 }
 
 /* Navigation Menu */
@@ -51,7 +51,7 @@
 /* Links */
 .nav-link {
     text-decoration: none;
-    color: #64748b;
+    color: #444f5f;
     font-weight: 500;
     font-size: 1rem;
     padding: 0.5rem 0;
@@ -60,7 +60,7 @@
 }
 
 .nav-link:hover {
-    color: #0284c7;
+    color: #0076b2;
 }
 
 /* Underline Animation on Hover */
@@ -71,7 +71,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0284c7;
+    background-color: #0076b2;
     transition: width 0.3s ease;
 }
 
@@ -82,5 +82,5 @@
 
 /* Active State */
 .nav-link.active {
-    color: #0284c7;
+    color: #0076b2;
 }

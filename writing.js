@@ -1,3 +1,6 @@
+const WRITING_SRC_DIR_PATH = './assets/'
+
+
 const area = document.getElementById('writing-area');
 area.addEventListener('paste', e => e.preventDefault())
 area.addEventListener('copy', e => e.preventDefault())
@@ -46,7 +49,7 @@ async function writingPart(params) {
     writingAreaElem.addEventListener("keyup", onType)
     document.querySelector("#writing-area").value = ""
 
-    document.querySelector(".question-img").src = "./assets/writing_" + params.get("text_id") + ".png"
+    document.querySelector(".question-img").src = [WRITING_SRC_DIR_PATH, params.get("text_id"), ".png"].join("")
 
     // read artice: 10 min
     await waitMainTimer(10 * 60)

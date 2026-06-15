@@ -26,7 +26,7 @@ body {
 }
 .question-img {
     display: block;
-    transform: translateY(25%) scale(1.5);
+    transform: translateY(40%) scale(1.8);
     height: auto;
 }
 #timer {

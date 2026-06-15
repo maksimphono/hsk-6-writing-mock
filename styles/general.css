@@ -5,10 +5,22 @@
     box-sizing: border-box;
 }
 
+html{
+    display: block;
+    height: min-content;
+}
+
 body {
     /* Font stack prioritizing clean sans-serif and excellent Chinese rendering */
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
     background-color: #f8fafc; /* Soft, non-distracting background */
     color: #334155;
     line-height: 1.6;
+    min-height: 130vh;
+    display: block;
+    height: auto;
+}
+
+.hidden {
+    display: none !important;
 }

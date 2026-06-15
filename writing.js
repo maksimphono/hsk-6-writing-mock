@@ -46,7 +46,7 @@ async function writingPart(params) {
     writingAreaElem.addEventListener("keyup", onType)
     document.querySelector("#writing-area").value = ""
 
-    document.querySelector(".question-img").src = "./" + params.get("text_id")
+    document.querySelector(".question-img").src = "./assets/writing_" + params.get("text_id") + ".png"
 
     // read artice: 10 min
     await waitMainTimer(10 * 60)
